@@ -168,7 +168,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2025-01-07 20:23:56 / Modified: 20:24:20" itemprop="dateCreated datePublished" datetime="2025-01-07T20:23:56+08:00">2025-01-07</time>
+      <time title="Created: 2025-01-07 20:23:56 / Modified: 20:30:09" itemprop="dateCreated datePublished" datetime="2025-01-07T20:23:56+08:00">2025-01-07</time>
     </span>
 
   
@@ -182,6 +182,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>很久之前在网上看到别人自己的博客网站，感觉很好看。等到有时间，便自己也搭建了一个自己的网站，就好像自己的一个小空间，里面可以放些自己的内容。自己在搭建过程中也遇到了很多坑，所以结合自己搭建的过程，在这里记录一下。</p>
+<p><img src="/Hexo-Github%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20250107203001469.png" alt="image-20250107203001469"></p>
 <h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><h4 id="GitHub注册"><a href="#GitHub注册" class="headerlink" title="GitHub注册"></a>GitHub注册</h4><p>要现在github注册一个账号，并且需要记住的用户名以及邮箱（后面会用）</p>
 <h4 id="Nodejs环境"><a href="#Nodejs环境" class="headerlink" title="Nodejs环境"></a>Nodejs环境</h4><p>Hexo是一款基于nodejs的博客框架，所以首先需要先安装nodejs。</p>
 <p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js — Run JavaScript Everywhere (nodejs.org)</a>在这里下载。</p>
@@ -203,7 +204,7 @@
 
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email <span class="string">&quot;user_email&quot;</span> # user_email填GitHub注册的邮箱</span><br></pre></td></tr></table></figure>
 
-<p>比如我的用户名为wsj，注册邮箱为<a href="mailto:&#119;&#115;&#106;&#x31;&#49;&#49;&#x32;&#50;&#50;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;">wsj111222@gmail.com</a>（后文以此为基础演示），那么就需要填入以下内容：</p>
+<p>比如我的用户名为wsj，注册邮箱为<a href="mailto:&#119;&#115;&#106;&#49;&#x31;&#x31;&#x32;&#x32;&#50;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#109;">wsj111222@gmail.com</a>（后文以此为基础演示），那么就需要填入以下内容：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;wsj&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;wsj111222@gmail.com&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="搭建GitHub博客"><a href="#搭建GitHub博客" class="headerlink" title="搭建GitHub博客"></a>搭建GitHub博客</h4><p><strong>注：这里新建仓库时，需要注意仓库的分支，如果默认分支和之后配置站点文件的分支不同会出现预览和实际不同的问题，<a href="#emphasize">见问题2</a>因为master容易带有侮辱性色彩，所以这里建议使用main分支，也建议在建仓库前修改默认分支为main。（后文配置站点文件以main为例）</strong></p>
